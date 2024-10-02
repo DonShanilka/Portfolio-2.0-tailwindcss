@@ -3,718 +3,166 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-        content="height=device-height,width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-    <title>Nishith Shanilka Portfolio</title>
-
-    <!-- Googel font link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-
-    <!-- box icon link -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-    <!-- Tailwind css link -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Smith - Web Designer</title>
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!--  Css Link -->
-    <!-- <link rel="stylesheet" href="style/home.css">  -->
-
-    <!-- My CustomColor -->
-    <link rel="stylesheet" href="style/myTailwind.css">
-
-    <link rel="stylesheet" href="style/about.css">
-    <link rel="stylesheet" href="style/service.css">
-    <link rel="stylesheet" href="style/goals.css">
-    <link rel="stylesheet" href="style/work.css">
-    <link rel="stylesheet" href="style/skill.css">
-    <link rel="stylesheet" href="style/contact.css">
-    <link rel="stylesheet" href="style/footer.css">
-    <link rel="stylesheet" href="style/assignment.css">
-
-    <!-- AOS Css Link -->
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
-
-    <!-- <link rel="stylesheet" href="/style/aos.css"> -->
-
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'deep-blue': '#0A0A2E',
+                        'bright-blue': '#00C2FF',
+                        'deep-purple': '#1E1E4E',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
-
-<body>
-    <div class="green-div-1"></div>
-
-    <!--Home Page Body-->
-    <section>
-        <!--Header-->
-        <header>
-            <div class="container max-w-full px-4 custom-green-bg">
-                <nav class="flex items-center justify-between py-4">
-                    <ul class="hidden md:flex space-x-6">
-                        <li><a href="#home" class="text-black hover:text-blue-400 transition duration-300">HOME</a></li>
-                        <li><a href="#about" class="text-black hover:text-blue-400 transition duration-300">ABOUT</a>
-                        </li>
-                        <li><a href="#service"
-                                class="text-black hover:text-blue-400 transition duration-300">SERVICE</a></li>
-                        <li><a href="#work" class="text-black hover:text-blue-400 transition duration-300">WORK</a></li>
-                        <li><a href="#goals" class="text-black hover:text-blue-400 transition duration-300">GOALS</a>
-                        </li>
-                        <li><a href="#contact"
-                                class="text-black hover:text-blue-400 transition duration-300">CONTACT</a></li>
-                    </ul>
-
-                    <!-- Mobile menu button -->
-                    <button class="md:hidden text-black hover:text-blue-400 focus:outline-none">
-                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16m-7 6h7"></path>
-                        </svg>
-                    </button>
-                </nav>
+<body class="bg-deep-blue text-white font-sans">
+    <header class="container mx-auto px-4 py-6">
+        <nav class="flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="/path-to-logo.svg" alt="Foliox" class="h-8 mr-2">
+                <span class="text-2xl font-bold text-bright-blue">Foliox</span>
             </div>
-
-            <!-- Mobile menu (hidden by default) -->
-            <div class="md:hidden hidden bg-gray-700">
-                <ul class="px-2 pt-2 pb-3 space-y-1">
-                    <li><a href="#home"
-                            class="block px-3 py-2 text-black hover:text-blue-400 transition duration-300">HOME</a></li>
-                    <li><a href="#about"
-                            class="block px-3 py-2 text-black hover:text-blue-400 transition duration-300">ABOUT</a>
-                    </li>
-                    <li><a href="#service"
-                            class="block px-3 py-2 text-black hover:text-blue-400 transition duration-300">SERVICE</a>
-                    </li>
-                    <li><a href="#work"
-                            class="block px-3 py-2 text-black hover:text-blue-400 transition duration-300">WORK</a></li>
-                    <li><a href="#goals"
-                            class="block px-3 py-2 text-black hover:text-blue-400 transition duration-300">GOALS</a>
-                    </li>
-                    <li><a href="#contact"
-                            class="block px-3 py-2 text-black hover:text-blue-400 transition duration-300">CONTACT</a>
-                    </li>
-                </ul>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#" class="hover:text-bright-blue">Home</a></li>
+                <li><a href="#" class="hover:text-bright-blue">About</a></li>
+                <li><a href="#" class="hover:text-bright-blue">Service</a></li>
+                <li><a href="#" class="hover:text-bright-blue">Portfolio</a></li>
+                <li><a href="#" class="hover:text-bright-blue">Blog</a></li>
+                <li><a href="#" class="hover:text-bright-blue">Contact</a></li>
+            </ul>
+            <div class="flex space-x-4">
+                <a href="#" class="hover:text-bright-blue"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-bright-blue"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="hover:text-bright-blue"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="hover:text-bright-blue"><i class="fab fa-instagram"></i></a>
             </div>
-        </header>
+        </nav>
+    </header>
 
-        <section>
-            <div id="home" class="homeBody">
-
+    <main class="container mx-auto px-4">
+        <section class="flex flex-col lg:flex-row items-center justify-between py-16">
+            <div class="w-full lg:w-1/2 mb-8 lg:mb-0">
+                <h1 class="text-4xl lg:text-6xl font-bold mb-2">James <span class="text-bright-blue">Smith</span></h1>
+                <p class="text-xl mb-6">Web Designer based in New York</p>
+                <button
+                    class="bg-bright-blue text-deep-blue px-6 py-3 rounded-full font-bold hover:bg-blue-400 transition duration-300">Get
+                    Connected</button>
+            </div>
+            <div class="w-full lg:w-1/2 flex justify-center lg:justify-end">
+                <img src="/path-to-james-image.jpg" alt="James Smith"
+                    class="rounded-full w-64 md:w-80 h-64 md:h-80 object-cover border-8 border-bright-blue">
             </div>
         </section>
 
-
-        <!-- About Section -->
-        <!--imahe and Page Hade-->
-
-        <section>
-            <div class="about-section" id="about">
-                <div>
-
-                    <h3 class="about-me">ABOUT ME</h3>
-
-                    <img src="assests/image/DSC_0986-02-01.jpeg" alt="" class="about-image-03">
-
-                    <div class="about-div">
-                        <p class="about-p">I'm Shanilka, from Sri Lanka Living in Colombo, a passionate Software
-                            Engineer
-                            with a keen eye for Full stack Developer, I am dedicated, enthusiastic and passionate about
-                            continuous learning and growth.
-                            I bring creativity, efficiency, and problem-solving
-                            skills to every project.
-                        </p>
-                    </div>
-
-                    <div class="platform-1">
-                        <img src="assests/image/icons8-fiverr-50.png" alt="" width="70%" height="70%"
-                            style="rotate: -45deg; top: 15%; left: 15%; position: absolute;">
-                    </div>
-                    <div class="platform-2">
-                        <img src="assests/image/icons8-upwork-50.png" alt="" width="70%" height="70%"
-                            style="rotate: -45deg; top: 15%; left: 15%; position: absolute;">
-                    </div>
-                    <div class="platform-3">
-                        <img src="assests/image/icons8-toptal-enables-start-ups,-businesses,-and-organizations-to-hire-freelancers-from-a-growing-network-48.png"
-                            alt="" width="70%" height="70%"
-                            style="rotate: -45deg; top: 15%; left: 15%; position: absolute;">
-                    </div>
-
-                    <p class="fiver-name">Fiverr</p>
-                    <p class="upwork-name">UpWork</p>
-                    <p class="toptal">TopTal</p>
-
-                </div>
-        </section>
-
-
-        <!--service header Section-->
-
-        <section>
-            <div id="service" class="service-main-div">
-
-
-                <!--service paragraph section-->
-
-                <div id="main-para">
-                    <h4 class="parahead">What Do I Help ?</h4>
-                    <p class="service-para"> I will help you with finging a solution and solve your problems.
-                        we use process design to create digital products
-                        Besids that also help their business . </p>
-                </div>
-
-                <!--service details section-->
-
-                <div>
-                    <br>
-
-                    <div class="mobile-app-rect">
-                        <img src="assests/image/cell-phone.png" class="mobile-img" title="mobile" alt="" width="40"
-                            height="40">
-                        <p class="Mad">Mobile App Developer</p>
-                        <p class="mobile-para">Create Modern Mobile Application <br> that reliable and consistency with
-                            <br>
-                            awesome ideas.
-                        </p>
-                        <p class="ptoject-mobile">8 Project Complete</p>
-
-                    </div>
-
-                    <br>
-
-                    <div class="web-rect">
-                        <img src="assests/image/world-wide-web.png" class="web-img" title="web" alt="" width="40"
-                            height="40">
-                        <p class="webD">Web Developer</p>
-                        <p class="web-para">Let the whole world know about your <br> brand with unique and performance
-                            <br>
-                            driven website.
-                        </p>
-                        <p class="project-web">12 Project Complete</p>
-                    </div>
-
-                    <br>
-
-                    <div class="ui-rect">
-                        <img src="assests/image/ui.png" class="ui-img" title="ui" alt="" width="40" height="40">
-                        <p class="uiux">UI/UX Design</p>
-                        <p class="uiux-para">Design is the main thing of application. <br> Pay more attention to
-                            eye-catching <br> colors. </p>
-                        <p class="uiProject">4 Project Complete</p>
-                    </div>
-
-                    <br>
-
-                    <div class="project-div">
-                        <p class="project-count">20+</p>
-                        <p class="project-complete">Project Complete</p>
-                    </div>
-
-
-                    <div class="cliebt-div">
-                        <p class="client-count">10+</p>
-                        <p class="happy-client">Happy Client</p>
-                    </div>
-
-                    <div class="ideas-div">
-                        <p class="ideas-count">30+</p>
-                        <p class="ideas">Creative Ideas</p>
-                    </div>
-
-                    <div class="country-div">
-                        <p class="Country-count">4+</p>
-                        <p class="country">Country</p>
-                    </div>
-
-
-                    <div class="blue-rect-1">
-                        <img src="/assests/image/icons8-project-48.png" alt="" width="70%" height="70%"
-                            style="rotate: -45deg; top: 15%; left: 15%; position: absolute;">
-                    </div>
-
-                    <div class="blue-rect-2">
-                        <img src="/assests/image/icons8-client-60.png" alt="" width="70%" height="70%"
-                            style="rotate: -45deg; top: 15%; left: 15%; position: absolute;">
-                    </div>
-
-                    <div class="blue-rect-3">
-                        <img src="/assests/image/icons8-country-48.png" alt="" width="70%" height="70%"
-                            style="rotate: -45deg; top: 15%; left: 15%; position: absolute;">
-                    </div>
-
-                    <div class="blue-rect-4">
-                        <img src="/assests/image/icons8-idea-48.png" alt="" width="70%" height="70%"
-                            style="rotate: -45deg; top: 15%; left: 15%; position: absolute;">
-                    </div>
-
-
-                </div>
-
-
-                <!--skill section-->
-
-                <div class="skill-mainDiv"></div>
-
-                <!-- skill page h1 -->
-                <div>
-                    <h1 class="skill-h1">My Skill</h1>
-                </div>
-
-
-                <!-- skill page para -->
-                <p class="skill-para">
-                    I proficiently navigate Java, MERN stack, HTML, CSS, JavaScript, Flutter, and React.
-                    With a robust grasp of each technology, I deliver high-quality solutions.
-
-                </p>
-
-
-                <!-- Skill page rect ,skill image and style -->
-                <div class="skill-1">
-                    <img src="/assests/image/icons8-java-50.png" alt=""
-                        style="rotate: -45deg; top: 6%; left: 4%; position: absolute; height: 75%; width: 75%;">
-                </div>
-
-                <div class="skill-2">
-                    <img src="/assests/image/icons8-mysql-48.png" alt=""
-                        style="rotate: -45deg; top: 15%; left: 18%; position: absolute; height: 60%; width: 60%;">
-                </div>
-
-                <div class="skill-3">
-                    <img src="/assests/image/icons8-html-50.png" alt=""
-                        style="rotate: -45deg; top: 16%; left: 14%; position: absolute; height: 80%;">
-                </div>
-
-                <div class="skill-4">
-                    <img src="/assests/image/icons8-css-60.png" alt=""
-                        style="rotate: -45deg; top: 17%; left: 14%; position: absolute; height: 70%; width: 70%;">
-                </div>
-
-                <div class="skill-5">
-                    <img src="/assests/image/icons8-javascript-50.png" alt=""
-                        style="rotate: -45deg; top: 12%; left: 15%; position: absolute; height: 70%; width: 70%;">
-                </div>
-
-                <div class="skill-6">
-                    <img src="/assests/image/icons8-react-60.png" alt=""
-                        style="rotate: -45deg; top: 12%; left: 13%; position: absolute; height: 75%; width: 75%;">
-                </div>
-
-                <div class="skill-7">
-                    <img src="/assests/image/icons8-flutter-50.png" alt=""
-                        style="rotate: -45deg; top: 7%; left: 13%; position: absolute; height: 70%; width: 70%;">
-                </div>
-
-                <div class="skill-8">
-                    <img src="/assests/image/icons8-typescript-50.png" alt=""
-                        style="rotate: -45deg; top: 20%; left: 18%; position: absolute; height: 65%; width: 65%;">
-                </div>
-
-                <div class="skill-9">
-                    <img src="/assests/image/icons8-bootstrap-60.png" alt=""
-                        style="rotate: -45deg; top: 16%; left: 14%; position: absolute; height: 70%; width: 70%;">
-                </div>
-
-                <div class="skill-10">
-                    <img src="/assests/image/icons8-spring-boot-48.png" alt=""
-                        style="rotate: -45deg; top: 16%; left: 13%; position: absolute; height: 70%; width: 70%;">
-                </div>
-
-                <div class="skill-11">
-                    <img src="/assests/image/icons8-spring-boot-40.png" alt=""
-                        style="rotate: -45deg; top: 16%; left: 13%; position: absolute; height: 70%; width: 70%;">
-                </div>
-
-                <div class="skill-12">
-                    <img src="/assests/image/icons8-mongo-db-64.png" alt=""
-                        style="rotate: -45deg; top: 14%; left: 13%; position: absolute; height: 70%; width: 70%;">
-                </div>
-
-                <div class="skill-13">
-                    <img src="/assests/image/icons8-node-js-48.png" alt=""
-                        style="rotate: -45deg; top: 14%; left: 13%; position: absolute; height: 70%; width: 70%;">
-                </div>
-
-                <div class="skill-14">
-                    <img src="/assests/image/icons8-express-js-40.png" alt=""
-                        style="rotate: -45deg; top: 14%; left: 13%; position: absolute; height: 70%; width: 70%;">
-                </div>
-
-                <div class="skill-15">
-                    <img src="/assests/image/icons8-jquery-50.png" alt=""
-                        style="rotate: -45deg; top: 14%; left: 15%; position: absolute; height: 70%; width: 70%;">
-                </div>
-
-                <!-- Skill page name and style -->
-                <p id="name-java">JAVA</p>
-                <p id="name-sql">SQL</p>
-                <p id="name-html">HTML</p>
-                <p id="name-css">CSS</p>
-                <p id="name-js">Java Script</p>
-                <p id="name-boostrap">Boostrap</p>
-                <p id="name-react">React</p>
-                <p id="name-flutter">Flutter</p>
-                <p id="name-sring">Spring</p>
-                <p id="name-springboot">Sprint Boot</p>
-                <p id="name-mongodb">Mongo DB</p>
-                <p id="name-nodeJs">Node JS</p>
-                <p id="name-typeScript">Type Script</p>
-                <p id="name-expressJs">Express JS</p>
-                <p id="name-jQuery">Jquery</p>
-
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            <div class="bg-deep-purple p-8 rounded-lg">
+                <i class="fas fa-cogs text-4xl text-bright-blue mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Deeper Skillset</h3>
+                <p class="text-gray-400">Kekda tumi sapna charini hodiye eirek tabo mix consectur adipag nistur
+                    adipicing sod temper.</p>
+            </div>
+            <div class="bg-deep-purple p-8 rounded-lg">
+                <i class="fas fa-briefcase text-4xl text-bright-blue mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Creative Work</h3>
+                <p class="text-gray-400">Kekda tumi sapna charini hodiye eirek tabo mix consectur adipag nistur
+                    adipicing sod temper.</p>
+            </div>
+            <div class="bg-deep-purple p-8 rounded-lg">
+                <i class="fas fa-gem text-4xl text-bright-blue mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Strong Dedication</h3>
+                <p class="text-gray-400">Kekda tumi sapna charini hodiye eirek tabo mix consectur adipag nistur
+                    adipicing sod temper.</p>
             </div>
         </section>
 
-
-        <!-- ***************************** work section *********************************-->
-        <section>
-            <div id="work" class="work-main-div">
-
-                <div>
-                    <h1 class="work">My Project </h1>
-                    <p class="project-main-para">The individual showcases a diverse portfolio of projects, showcasing
-                        their expertise in
-                        web design, Mobile app development, demonstrating their dedication to delivering high-quality
-                        work.
-                    </p>
-                </div>
-
-                <div id="card-area">
-                    <div class="wrapper">
-                        <div class="box-area">
-
-                            <!-- *********** Project 01 ******** -->
-                            <div class="box project-01">
-                                <img src="assests/image/MegaMartImage.jpg" alt="">
-                                <div class="overlay">
-                                    <h2 class="project-name">Project Mega</h2>
-                                    <p class="project-para">The JavaFX Supercenter Management System is a user-friendly
-                                        software solution
-                                        designed to enhance retail supercenter operations and efficiency, utilizing
-                                        JavaFX for user
-                                        interface and functionality.
-                                    </p>
-                                    <button class="project-btn"
-                                        onclick="location.href='https://github.com/DonShanilka/Final-Project_Second_impl-main'">Read
-                                        More ></button>
-                                </div>
-                            </div>
-
-                            <!-- ********** Project 02 ********* -->
-                            <div class="box project-02">
-                                <img alt="" src="assests/image/WilmaResturentPos.jpg">
-                                <div class="overlay">
-                                    <h2 class="project-name">Wilma Restaurant</h2>
-                                    <p class="project-para">The Wilma Restaurant Food POS System is a user-friendly
-                                        software that integrates with hardware components,
-                                        allowing restaurant staff to input orders,
-                                        send directly to the kitchen.
-                                    </p>
-                                    <button class="project-btn"
-                                        onclick="location.href='https://github.com/DonShanilka/Boostrap_pos_system'">Read
-                                        More ></button>
-                                </div>
-                            </div>
-
-                            <!-- *********** Project 03 ********* -->
-                            <div class="box project-03">
-                                <img alt="" src="assests/image/WilmaPosUi.jpg">
-                                <div class="overlay">
-                                    <h2 class="project-name">Wilma Restaurant UI</h2>
-                                    <p class="project-para">The Figma UI design for the restaurant POS system is crafted
-                                        to offer a
-                                        visually appealing and user-friendly interface tailored specifically for
-                                        restaurant staff.
-                                        Here's a design.
-                                    </p>
-                                    <button class="project-btn"
-                                        onclick="location.href='https://www.figma.com/file/F3TQHQsckzqABylzuPST7x/Untitled?type=design&mode=design&t=2blpFZuxiXvNYtIB-1'">Read
-                                        More ></button>
-                                </div>
-                            </div>
-
-                            <!-- *********** Project 04 ********** -->
-                            <div class="box project-04">
-                                <img alt="" src="assests/image/GrilliResturentImage.jpg">
-                                <div class="overlay">
-                                    <h2 class="project-name">GrilliRestaurant</h2>
-                                    <p class="project-para">The Grilli Restaurant website is a user-friendly platform
-                                        with features like
-                                        online booking, menu showcase, search functionality, and user reviews, enhancing
-                                        the
-                                        dining experience across various devices.
-                                    </p>
-                                    <button class="project-btn"
-                                        onclick="location.href='https://github.com/DonShanilka/Grilli_Restaurant'">Read
-                                        More ></button>
-                                </div>
-                            </div>
-
-                            <!-- ********** Project 05 ************ -->
-                            <div class="box project-05">
-                                <img alt="" src="assests/image/ChatAppImage.jpg">
-                                <div class="overlay">
-                                    <h2 class="project-name">Chat App</h2>
-                                    <p class="project-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                        Neque modi explicabo libero ea nam. Quod.</p>
-                                    <button class="project-btn"
-                                        onclick="location.href='https://github.com/DonShanilka/np_ChatApp_SecondSem'">Read
-                                        More</button>
-                                </div>
-                            </div>
-
-                            <!-- ********** Project 06 ************ -->
-                            <div class="box project-06">
-                                <img alt="" src="assests/image/ChamaComputerImage.jpg">
-                                <div class="overlay">
-                                    <h3 class="project-name">Project Chama</h2>
-                                        <p class="project-para">The Computer Shop System in including user
-                                            authentication, product tracking,
-                                            inventory tracking, POS system, customer management, analytics, supplier
-                                            management,
-                                            and user interface.
-                                        </p>
-                                        <button class="project-btn"
-                                            onclick="location.href='https://github.com/DonShanilka/chamaComputers'">Read
-                                            More ></button>
-                                </div>
-                            </div>
+        <section class="mb-16">
+            <h2 class="text-4xl font-bold text-center mb-2">A Passionate Developer</h2>
+            <h3 class="text-2xl text-center text-bright-blue mb-8">Who Loves to Code</h3>
+            <div class="flex flex-col lg:flex-row items-start space-x-0 lg:space-x-8 space-y-8 lg:space-y-0">
+                <div class="w-full lg:w-1/2">
+                    <div class="relative">
+                        <img src="/path-to-working-image.jpg" alt="James working" class="rounded-lg w-full h-auto">
+                        <div class="absolute -bottom-4 -right-4 bg-bright-blue text-deep-blue p-4 rounded-lg">
+                            <span class="text-4xl font-bold">12</span>
+                            <span class="block">Successful Years</span>
                         </div>
                     </div>
                 </div>
+                <div class="w-full lg:w-1/2">
+                    <h4 class="text-2xl font-bold mb-4">About Me</h4>
+                    <p class="text-gray-400 mb-6">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum velit esse cillum dolore eu fugiat.</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <h5 class="font-bold">Name</h5>
+                            <p class="text-gray-400">Alan Walker</p>
+                        </div>
+                        <div>
+                            <h5 class="font-bold">Email</h5>
+                            <p class="text-gray-400">hello@folio.com</p>
+                        </div>
+                        <div>
+                            <h5 class="font-bold">Phone</h5>
+                            <p class="text-gray-400">+123 456 7890</p>
+                        </div>
+                        <div>
+                            <h5 class="font-bold">Address</h5>
+                            <p class="text-gray-400">20, Bordeshi, Dhaka</p>
+                        </div>
+                        <div>
+                            <h5 class="font-bold">Degree</h5>
+                            <p class="text-gray-400">Master</p>
+                        </div>
+                        <div>
+                            <h5 class="font-bold">Freelance</h5>
+                            <p class="text-gray-400">Available</p>
+                        </div>
+                    </div>
+                    <button
+                        class="mt-6 bg-bright-blue text-deep-blue px-6 py-3 rounded-full font-bold hover:bg-blue-400 transition duration-300">Download
+                        CV</button>
+                </div>
             </div>
         </section>
 
-
-        <!-- ***************************** assignment Section ************************** -->
+        <section class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
+            <div class="bg-deep-purple p-6 rounded-lg text-center">
+                <span class="text-4xl font-bold text-bright-blue">20</span>
+                <p class="text-sm">Digital Products</p>
+            </div>
+            <div class="bg-deep-purple p-6 rounded-lg text-center">
+                <span class="text-4xl font-bold text-bright-blue">280</span>
+                <p class="text-sm">Direct Clients</p>
+            </div>
+            <div class="bg-deep-purple p-6 rounded-lg text-center">
+                <span class="text-4xl font-bold text-bright-blue">3K</span>
+                <p class="text-sm">Total Projects</p>
+            </div>
+            <div class="bg-deep-purple p-6 rounded-lg text-center">
+                <span class="text-4xl font-bold text-bright-blue">9+</span>
+                <p class="text-sm">Awards Win</p>
+            </div>
+        </section>
 
         <section>
-            <div class="assignment-main-div">
-
-                <h1 class="assignment-header">Assignment</h1>
-                <h3 class="assignment-para">In this assignment, I will explore key concepts and provide an in-depth
-                    analysis of the topic, demonstrating thorough research and critical thinking skills to support my
-                    findings.</h3>
-                <div class="ass-01 ">
-                    <a href="../Assignment/Cases/case-01/index.html" target="_blank" class="view custom-button">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i> &nbsp; Visit
-                    </a>
-                    <div class="rect">
-                        <img src="assests/image/icons8-assignment-50 copy.png" alt="">
-                    </div>
-
-                    <div class="ass-header">
-                        <h3>01</h3>
-                        <h1>Assignment</h1>
-                    </div>
-                    <p class="ass-para">This assignment delves into CSS properties, layout, color, typography, and
-                        responsiveness, aiming to enhance user experience and create visually appealing web pages,
-                        requiring a comprehensive understanding.</p>
-                </div>
-
-                <div class="ass-02 ">
-
-                    <a href="../Assignment/Cases/case-02/index.html" target="_blank" class="view custom-button">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i> &nbsp; Visit
-                    </a>
-                    <div class="rect">
-                        <img src="assests/image/icons8-assignment-50 copy.png" alt="">
-                    </div>
-                    <div class="ass-header">
-                        <h3>02</h3>
-                        <h1>Assignment</h1>
-                    </div>
-                    <p class="ass-para">This assignment delves into CSS properties, layout, color, typography, and
-                        responsiveness, aiming to enhance user experience and create visually appealing web pages,
-                        requiring a comprehensive understanding.</p>
-                </div>
-
-                <div class="ass-03 ">
-                    <a href="../Assignment/Cases/case-03/index.html" target="_blank" class="view custom-button">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i> &nbsp; Visit
-                    </a>
-                    <div class="rect">
-                        <img src="assests/image/icons8-assignment-50 copy.png" alt="">
-                    </div>
-                    <div class="ass-header">
-                        <h3>03</h3>
-                        <h1>Assignment</h1>
-                    </div>
-                    <p class="ass-para">This assignment delves into CSS properties, layout, color, typography, and
-                        responsiveness, aiming to enhance user experience and create visually appealing web pages,
-                        requiring a comprehensive understanding.</p>
-                </div>
-
-                <div class="ass-04 ">
-                    <a href="../Assignment/Cases/case-04/index.html" target="_blank" class="view custom-button">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i> &nbsp; Visit
-                    </a>
-                    <div class="rect">
-                        <img src="assests/image/icons8-assignment-50 copy.png" alt="">
-                    </div>
-                    <div class="ass-header">
-                        <h3>04</h3>
-                        <h1>Assignment</h1>
-                    </div>
-                    <p class="ass-para">This assignment delves into CSS properties, layout, color, typography, and
-                        responsiveness, aiming to enhance user experience and create visually appealing web pages,
-                        requiring a comprehensive understanding.</p>
-                </div>
-
-                <div class="ass-05 ">
-                    <div class="theBack"></div>
-                    <div class="line"></div>
-                    <a href="../Assignment/Cases/case-05/index.html" target="_blank" class="view custom-button">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i> &nbsp; Visit
-                    </a>
-                    <div class="rect">
-                        <img src="assests/image/icons8-assignment-50 copy.png" alt="">
-                    </div>
-                    <div class="ass-header">
-                        <h3>05</h3>
-                        <h1>Assignment</h1>
-                    </div>
-                    <p class="ass-para">This assignment delves into CSS properties, layout, color, typography, and
-                        responsiveness, aiming to enhance user experience and create visually appealing web pages,
-                        requiring a comprehensive understanding.</p>
-                </div>
-
-                <div class="ass-06 ">
-                    <div class="theBack"></div>
-                    <div class="line"></div>
-                    <a href="../Assignment/Cases/case-06/index.html" target="_blank" class="view custom-button">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i> &nbsp; Visit
-                    </a>
-                    <div class="rect">
-                        <img src="assests/image/icons8-assignment-50 copy.png" alt="">
-                    </div>
-                    <div class="ass-header">
-                        <h3>06</h3>
-                        <h1>Assignment</h1>
-                    </div>
-                    <p class="ass-para">This assignment delves into CSS properties, layout, color, typography, and
-                        responsiveness, aiming to enhance user experience and create visually appealing web pages,
-                        requiring a comprehensive understanding.</p>
-                </div>
-
-            </div>
+            <h2 class="text-4xl font-bold text-center mb-2">I Work Hard to Improve My</h2>
+            <h3 class="text-2xl text-center text-bright-blue mb-8">Skills Regularly</h3>
+            <!-- Add skills section here -->
         </section>
+    </main>
 
-
-        <!--goals header-->
-        <section>
-            <div id="goals" class="goals-main-rect">
-
-                <h1 class="gols-header">My Goals</h1>
-                <!--goals-->
-
-                <div class="goal-01">
-                    <div>
-                        <h3> "</h3>
-                    </div>
-                    <p>"Our main goal is to provide software solutions that meet our clients' needs and exceed
-                        theirexpectations.
-                        We believe that quality is key, and we strive to deliver software solutions that are robust,
-                        reliable, and scalable.
-                        We use the latest software development methodologies and tools to ensure that our solutions are
-                        of
-                        the highest quality. . ."
-                    </p>
-                </div>
-
-                <div class="goal-02">
-                    <div>
-                        <h3>"</h3>
-                    </div>
-                    <p>
-                        "We value our clients and are committed to providing them with the best possible
-                        customer service. We understand that every client is unique, and we take the time to listen
-                        to their needs and provide them with personalized solutions. We are always available to answer
-                        their questions and provide them with support throughout the software development process."
-                    </p>
-                </div>
-
-                <div class="goal-03">
-                    <div>
-                        <h3>"</h3>
-                    </div>
-                    <p>
-                        "Our goal is not just to complete projects, but to build long -term partnerships with our
-                        clients.
-                        We believe that successful software development requires collaboration and open communication.
-                        We work closely with our clients to understand their business goals and challenges and provide
-                        them
-                        with solutions that help them achieve their objectives.
-                        We are committed to building relationships\ based on trust, transparency, and mutual respect."
-                    </p>
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- **************************** contact section ******************************* -->
-        <section>
-            <div class="contact-main-div" id="contact">
-                <div>
-                    <p class="header">feel free to contact us and I will get
-                        back to you as soon as we can. </p>
-
-                    <label for="name"></label>
-                    <input type="text" id="name" value="name"><br><br>
-                    <label for="email"></label>
-                    <input type="email" id="email" value="email"><br><br>
-                    <label for="details"></label>
-                    <input type="text" id="details" value="tell us all about it"><br><br>
-                    <input type="button" id="button" value="send">
-                </div>
-
-                <img src="/assests/image/world_map_PNG34.png" alt="" class="world-img">
-                <!--contact details-->
-
-                <div class="contact-gray-rect"></div>
-
-                <div class="contact-details">
-                    <p>address</p>
-                    <p class="address">21 / 2 ThappaWaththa Road <br> Godigamuwa, <br>Maharagama <br>Colombo
-                        - Sri Lanka</p>
-                    <br>
-                    <p>active hours</p>
-                    <p class="hours">Monday - Friday <br> 9 am - 5 pm <br> Weekend <br> Close</p>
-                    <br>
-                    <p>contact</p>
-                    <p class="contact">shanilka799@gmail.com <br> +94 701094749</p>
-                </div>
-
-                <img src="assests/image/icons8-location.gif" alt="" class="location-icon">
-
-            </div>
-        </section>
-
-        <!--footer-->
-
-        <footer class="footer">
-
-            <h5 class="overview">OVERVIEW</h5>
-
-            <div class="footer-nav">
-                <a href="#home" class="a">HOME</a>
-                <a href="#about" class="a">ABOUT</a>
-                <a href="#service" class="a">SERVICE</a>
-                <a href="#work" class="a">WORK</a>
-                <a href="#goals" class="a">GOALS</a>
-                <a href="#contact" class="a">CONTACT</a>
-            </div>
-
-            <p class="Copyright">© Copyright 2024. All rights reserved. Developed by Shanilka</p>
-
-        </footer>
-
-        <!-- Link js file -->
-        <script src="./script/scrollreveal.min.js"></script>
-        <script src="./script/script.js"></script>
-
+    <footer class="bg-deep-purple mt-16 py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Foliox. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 
 </html>
