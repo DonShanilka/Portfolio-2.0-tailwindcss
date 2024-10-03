@@ -4,163 +4,248 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>James Smith - Web Designer</title>
+    <title>Nishith Shanilka Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'deep-blue': '#0A0A2E',
-                        'bright-blue': '#00C2FF',
-                        'deep-purple': '#1E1E4E',
-                    }
-                }
-            }
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
         }
-    </script>
+
+        .tech-icon {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .tech-icon:hover {
+            transform: rotate(0deg) scale(1.1);
+        }
+    </style>
 </head>
 
-<body class="bg-deep-blue text-white font-sans">
-    <header class="container mx-auto px-4 py-6">
-        <nav class="flex justify-between items-center">
-            <div class="flex items-center">
-                <img src="/path-to-logo.svg" alt="Foliox" class="h-8 mr-2">
-                <span class="text-2xl font-bold text-bright-blue">Foliox</span>
-            </div>
-            <ul class="hidden md:flex space-x-6">
-                <li><a href="#" class="hover:text-bright-blue">Home</a></li>
-                <li><a href="#" class="hover:text-bright-blue">About</a></li>
-                <li><a href="#" class="hover:text-bright-blue">Service</a></li>
-                <li><a href="#" class="hover:text-bright-blue">Portfolio</a></li>
-                <li><a href="#" class="hover:text-bright-blue">Blog</a></li>
-                <li><a href="#" class="hover:text-bright-blue">Contact</a></li>
+<body class="bg-white text-black">
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto px-4 py-4">
+            <ul class="flex flex-wrap justify-center md:justify-end space-x-4">
+                <li><a href="#home" class="text-blue-600 hover:text-blue-800">HOME</a></li>
+                <li><a href="#about" class="text-blue-600 hover:text-blue-800">ABOUT</a></li>
+                <li><a href="#service" class="text-blue-600 hover:text-blue-800">SERVICE</a></li>
+                <li><a href="#work" class="text-blue-600 hover:text-blue-800">WORK</a></li>
+                <li><a href="#goals" class="text-blue-600 hover:text-blue-800">GOALS</a></li>
+                <li><a href="#contact" class="text-blue-600 hover:text-blue-800">CONTACT</a></li>
             </ul>
-            <div class="flex space-x-4">
-                <a href="#" class="hover:text-bright-blue"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="hover:text-bright-blue"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="hover:text-bright-blue"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" class="hover:text-bright-blue"><i class="fab fa-instagram"></i></a>
-            </div>
         </nav>
     </header>
 
-    <main class="container mx-auto px-4">
-        <section class="flex flex-col lg:flex-row items-center justify-between py-16">
-            <div class="w-full lg:w-1/2 mb-8 lg:mb-0">
-                <h1 class="text-4xl lg:text-6xl font-bold mb-2">James <span class="text-bright-blue">Smith</span></h1>
-                <p class="text-xl mb-6">Web Designer based in New York</p>
-                <button
-                    class="bg-bright-blue text-deep-blue px-6 py-3 rounded-full font-bold hover:bg-blue-400 transition duration-300">Get
-                    Connected</button>
-            </div>
-            <div class="w-full lg:w-1/2 flex justify-center lg:justify-end">
-                <img src="/path-to-james-image.jpg" alt="James Smith"
-                    class="rounded-full w-64 md:w-80 h-64 md:h-80 object-cover border-8 border-bright-blue">
-            </div>
-        </section>
-
-        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            <div class="bg-deep-purple p-8 rounded-lg">
-                <i class="fas fa-cogs text-4xl text-bright-blue mb-4"></i>
-                <h3 class="text-xl font-bold mb-2">Deeper Skillset</h3>
-                <p class="text-gray-400">Kekda tumi sapna charini hodiye eirek tabo mix consectur adipag nistur
-                    adipicing sod temper.</p>
-            </div>
-            <div class="bg-deep-purple p-8 rounded-lg">
-                <i class="fas fa-briefcase text-4xl text-bright-blue mb-4"></i>
-                <h3 class="text-xl font-bold mb-2">Creative Work</h3>
-                <p class="text-gray-400">Kekda tumi sapna charini hodiye eirek tabo mix consectur adipag nistur
-                    adipicing sod temper.</p>
-            </div>
-            <div class="bg-deep-purple p-8 rounded-lg">
-                <i class="fas fa-gem text-4xl text-bright-blue mb-4"></i>
-                <h3 class="text-xl font-bold mb-2">Strong Dedication</h3>
-                <p class="text-gray-400">Kekda tumi sapna charini hodiye eirek tabo mix consectur adipag nistur
-                    adipicing sod temper.</p>
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <h1 class="text-4xl md:text-6xl font-bold mb-4">I'm <br> Nishith Shanilka</h1>
+                        <p class="text-lg mb-6">Hi, I'm a Full Stack Developer. This is my official portfolio website to
+                            showcase my all works related to web development, mobile app development and UI design.</p>
+                        <a href="#contact"
+                            class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300">Contact</a>
+                    </div>
+                    <div class="md:w-1/2">
+                        <img src="assests/image/MNM_4690-01-removebg-preview.png" alt="Nishith Shanilka"
+                            class="w-full max-w-md mx-auto">
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="mb-16">
-            <h2 class="text-4xl font-bold text-center mb-2">A Passionate Developer</h2>
-            <h3 class="text-2xl text-center text-bright-blue mb-8">Who Loves to Code</h3>
-            <div class="flex flex-col lg:flex-row items-start space-x-0 lg:space-x-8 space-y-8 lg:space-y-0">
-                <div class="w-full lg:w-1/2">
-                    <div class="relative">
-                        <img src="/path-to-working-image.jpg" alt="James working" class="rounded-lg w-full h-auto">
-                        <div class="absolute -bottom-4 -right-4 bg-bright-blue text-deep-blue p-4 rounded-lg">
-                            <span class="text-4xl font-bold">12</span>
-                            <span class="block">Successful Years</span>
+        <!-- About Section -->
+        <section id="about" class="py-20">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center">ABOUT ME</h2>
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <img src="assests/image/DSC_0986-02-01.jpeg" alt="About Me"
+                            class="w-full max-w-md mx-auto rounded-lg shadow-lg">
+                    </div>
+                    <div class="md:w-1/2">
+                        <p class="text-lg mb-6">I'm Shanilka, from Sri Lanka Living in Colombo, a passionate Software
+                            Engineer with a keen eye for Full stack Developer. I am dedicated, enthusiastic and
+                            passionate about continuous learning and growth. I bring creativity, efficiency, and
+                            problem-solving skills to every project.</p>
+                        <div class="flex space-x-4">
+                            <div class="bg-gray-200 p-4 rounded-lg">
+                                <img src="assests/image/icons8-fiverr-50.png" alt="Fiverr"
+                                    class="w-12 h-12 mx-auto mb-2">
+                                <p class="text-center">Fiverr</p>
+                            </div>
+                            <div class="bg-gray-200 p-4 rounded-lg">
+                                <img src="assests/image/icons8-upwork-50.png" alt="Upwork"
+                                    class="w-12 h-12 mx-auto mb-2">
+                                <p class="text-center">Upwork</p>
+                            </div>
+                            <div class="bg-gray-200 p-4 rounded-lg">
+                                <img src="assests/image/icons8-toptal-enables-start-ups,-businesses,-and-organizations-to-hire-freelancers-from-a-growing-network-48.png"
+                                    alt="Toptal" class="w-12 h-12 mx-auto mb-2">
+                                <p class="text-center">Toptal</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="w-full lg:w-1/2">
-                    <h4 class="text-2xl font-bold mb-4">About Me</h4>
-                    <p class="text-gray-400 mb-6">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                        qui officia deserunt mollit anim id est laborum velit esse cillum dolore eu fugiat.</p>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div>
-                            <h5 class="font-bold">Name</h5>
-                            <p class="text-gray-400">Alan Walker</p>
-                        </div>
-                        <div>
-                            <h5 class="font-bold">Email</h5>
-                            <p class="text-gray-400">hello@folio.com</p>
-                        </div>
-                        <div>
-                            <h5 class="font-bold">Phone</h5>
-                            <p class="text-gray-400">+123 456 7890</p>
-                        </div>
-                        <div>
-                            <h5 class="font-bold">Address</h5>
-                            <p class="text-gray-400">20, Bordeshi, Dhaka</p>
-                        </div>
-                        <div>
-                            <h5 class="font-bold">Degree</h5>
-                            <p class="text-gray-400">Master</p>
-                        </div>
-                        <div>
-                            <h5 class="font-bold">Freelance</h5>
-                            <p class="text-gray-400">Available</p>
-                        </div>
-                    </div>
-                    <button
-                        class="mt-6 bg-bright-blue text-deep-blue px-6 py-3 rounded-full font-bold hover:bg-blue-400 transition duration-300">Download
-                        CV</button>
+            </div>
+        </section>
+
+        <section class="service-main-div">
+            <!--service paragraph section-->
+            <div id="main-para" class="text-center p-6">
+                <h4 class="text-2xl font-bold mb-4">What Do I Help?</h4>
+                <p class="text-gray-600">I will help you with finding a solution and solving your problems. We use
+                    process design to create digital products. Besides that, I also help their business.</p>
+            </div>
+
+            <!--service details section-->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
+                <div class="text-center bg-white shadow-md rounded-lg p-6">
+                    <img src="assets/image/cell-phone.png" class="mx-auto mb-4" title="mobile" alt="Mobile App"
+                        width="40" height="40">
+                    <p class="font-bold text-lg">Mobile App Developer</p>
+                    <p class="text-gray-600">Create modern mobile applications that are reliable and consistent with
+                        awesome ideas.</p>
+                    <p class="text-gray-500 mt-4">8 Projects Completed</p>
+                </div>
+
+                <div class="text-center bg-white shadow-md rounded-lg p-6">
+                    <img src="assets/image/world-wide-web.png" class="mx-auto mb-4" title="web" alt="Web Developer"
+                        width="40" height="40">
+                    <p class="font-bold text-lg">Web Developer</p>
+                    <p class="text-gray-600">Let the world know about your brand with unique and performance-driven
+                        websites.</p>
+                    <p class="text-gray-500 mt-4">12 Projects Completed</p>
+                </div>
+
+                <div class="text-center bg-white shadow-md rounded-lg p-6">
+                    <img src="assets/image/ui.png" class="mx-auto mb-4" title="UI/UX" alt="UI/UX Design" width="40"
+                        height="40">
+                    <p class="font-bold text-lg">UI/UX Designer</p>
+                    <p class="text-gray-600">Design is the main aspect of an application. Focus on eye-catching colors
+                        and aesthetics.</p>
+                    <p class="text-gray-500 mt-4">4 Projects Completed</p>
+                </div>
+
+                <div class="bg-gray-100 p-6 text-center rounded-lg">
+                    <p class="text-4xl font-bold text-blue-500">20+</p>
+                    <p class="text-gray-600">Projects Completed</p>
+                </div>
+
+                <div class="bg-gray-100 p-6 text-center rounded-lg">
+                    <p class="text-4xl font-bold text-blue-500">10+</p>
+                    <p class="text-gray-600">Happy Clients</p>
+                </div>
+
+                <div class="bg-gray-100 p-6 text-center rounded-lg">
+                    <p class="text-4xl font-bold text-blue-500">30+</p>
+                    <p class="text-gray-600">Creative Ideas</p>
+                </div>
+
+                <div class="bg-gray-100 p-6 text-center rounded-lg">
+                    <p class="text-4xl font-bold text-blue-500">4+</p>
+                    <p class="text-gray-600">Countries</p>
                 </div>
             </div>
+
+            <!-- Skills section -->
+            <div class="text-center py-12">
+                <h1 class="text-3xl font-bold">My Skills</h1>
+                <p class="text-gray-600 mt-4">I proficiently navigate Java, MERN stack, HTML, CSS, JavaScript, Flutter,
+                    and React. With a robust grasp of each technology, I deliver high-quality solutions.</p>
+            </div>
+
+            <div class="container mx-auto py-12">
+                <div class="flex flex-wrap justify-center gap-4 p-6 space-x-10 space-y-16 w-10/12 relative inset-x-3">
+                    <div class="flex flex-col justify-center items-center p-2" style="transform: rotate(45deg);">
+
+                    </div>
+                    <div class="flex flex-col justify-center items-center p-2 w-20 h-20 bg-white rounded-lg border-2 border-blue-500 tech-icon"
+                        style="transform: rotate(45deg);">
+                        <img src="/api/placeholder/40/40" class="mb-2" alt="Java" style="transform: rotate(-45deg);">
+                        <p class="text-gray-700 text-xs" style="transform: rotate(-45deg);">Java</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center p-2 w-20 h-20 bg-white rounded-lg border-2 border-blue-500 tech-icon"
+                        style="transform: rotate(45deg);">
+                        <img src="/api/placeholder/40/40" class="mb-2" alt="MySQL" style="transform: rotate(-45deg);">
+                        <p class="text-gray-700 text-xs" style="transform: rotate(-45deg);">SQL</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center p-2 w-20 h-20 bg-white rounded-lg border-2 border-blue-500 tech-icon"
+                        style="transform: rotate(45deg);">
+                        <img src="/api/placeholder/40/40" class="mb-2" alt="HTML" style="transform: rotate(-45deg);">
+                        <p class="text-gray-700 text-xs" style="transform: rotate(-45deg);">HTML</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center p-2 w-20 h-20 bg-white rounded-lg border-2 border-blue-500 tech-icon"
+                        style="transform: rotate(45deg);">
+                        <img src="/api/placeholder/40/40" class="mb-2" alt="CSS" style="transform: rotate(-45deg);">
+                        <p class="text-gray-700 text-xs" style="transform: rotate(-45deg);">CSS</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center p-2 w-20 h-20 bg-white rounded-lg border-2 border-blue-500 tech-icon"
+                        style="transform: rotate(45deg);">
+                        <img src="/api/placeholder/40/40" class="mb-2" alt="JavaScript"
+                            style="transform: rotate(-45deg);">
+                        <p class="text-gray-700 text-xs" style="transform: rotate(-45deg);">JavaScript</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center p-2 w-20 h-20 bg-white rounded-lg border-2 border-blue-500 tech-icon"
+                        style="transform: rotate(45deg);">
+                        <img src="/api/placeholder/40/40" class="mb-2" alt="React" style="transform: rotate(-45deg);">
+                        <p class="text-gray-700 text-xs" style="transform: rotate(-45deg);">React</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center p-2 w-20 h-20 bg-white rounded-lg border-2 border-blue-500 tech-icon"
+                        style="transform: rotate(45deg);">
+                        <img src="/api/placeholder/40/40" class="mb-2" alt="Flutter" style="transform: rotate(-45deg);">
+                        <p class="text-gray-700 text-xs" style="transform: rotate(-45deg);">Flutter</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center p-2 w-20 h-20 bg-white rounded-lg border-2 border-blue-500 tech-icon"
+                        style="transform: rotate(45deg);">
+                        <img src="/api/placeholder/40/40" class="mb-2" alt="Bootstrap"
+                            style="transform: rotate(-45deg);">
+                        <p class="text-gray-700 text-xs" style="transform: rotate(-45deg);">Bootstrap</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center p-2 w-20 h-20 bg-white rounded-lg border-2 border-blue-500 tech-icon"
+                        style="transform: rotate(45deg);">
+                        <img src="/api/placeholder/40/40" class="mb-2" alt="Spring" style="transform: rotate(-45deg);">
+                        <p class="text-gray-700 text-xs" style="transform: rotate(-45deg);">Spring</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center p-2 w-20 h-20 bg-white rounded-lg border-2 border-blue-500 tech-icon"
+                        style="transform: rotate(45deg);">
+                        <img src="/api/placeholder/40/40" class="mb-2" alt="NodeJS" style="transform: rotate(-45deg);">
+                        <p class="text-gray-700 text-xs" style="transform: rotate(-45deg);">NodeJS</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center p-2 w-20 h-20 bg-white rounded-lg border-2 border-blue-500 tech-icon"
+                        style="transform: rotate(45deg);">
+                        <img src="/api/placeholder/40/40" class="mb-2" alt="TypeScript"
+                            style="transform: rotate(-45deg);">
+                        <p class="text-gray-700 text-xs" style="transform: rotate(-45deg);">TypeScript</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center p-2 w-20 h-20 bg-white rounded-lg border-2 border-blue-500 tech-icon"
+                        style="transform: rotate(45deg);">
+                        <img src="/api/placeholder/40/40" class="mb-2" alt="Express" style="transform: rotate(-45deg);">
+                        <p class="text-gray-700 text-xs" style="transform: rotate(-45deg);">Express</p>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
-        <section class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
-            <div class="bg-deep-purple p-6 rounded-lg text-center">
-                <span class="text-4xl font-bold text-bright-blue">20</span>
-                <p class="text-sm">Digital Products</p>
-            </div>
-            <div class="bg-deep-purple p-6 rounded-lg text-center">
-                <span class="text-4xl font-bold text-bright-blue">280</span>
-                <p class="text-sm">Direct Clients</p>
-            </div>
-            <div class="bg-deep-purple p-6 rounded-lg text-center">
-                <span class="text-4xl font-bold text-bright-blue">3K</span>
-                <p class="text-sm">Total Projects</p>
-            </div>
-            <div class="bg-deep-purple p-6 rounded-lg text-center">
-                <span class="text-4xl font-bold text-bright-blue">9+</span>
-                <p class="text-sm">Awards Win</p>
-            </div>
-        </section>
 
-        <section>
-            <h2 class="text-4xl font-bold text-center mb-2">I Work Hard to Improve My</h2>
-            <h3 class="text-2xl text-center text-bright-blue mb-8">Skills Regularly</h3>
-            <!-- Add skills section here -->
-        </section>
     </main>
 
-    <footer class="bg-deep-purple mt-16 py-8">
-        <div class="container mx-auto px-4 text-center">
-            <p>&copy; 2024 Foliox. All rights reserved.</p>
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <h5 class="text-xl font-bold mb-4">OVERVIEW</h5>
+            <div class="flex flex-wrap justify-center md:justify-start space-x-4 mb-4">
+                <a href="#home" class="hover:text-blue-300">HOME</a>
+                <a href="#about" class="hover:text-blue-300">ABOUT</a>
+                <a href="#service" class="hover:text-blue-300">SERVICE</a>
+                <a href="#work" class="hover:text-blue-300">WORK</a>
+                <a href="#goals" class="hover:text-blue-300">GOALS</a>
+                <a href="#contact" class="hover:text-blue-300">CONTACT</a>
+            </div>
+            <p class="text-center">© Copyright 2024. All rights reserved. Developed by Shanilka</p>
         </div>
     </footer>
 </body>
