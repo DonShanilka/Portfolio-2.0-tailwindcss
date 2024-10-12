@@ -22,4 +22,10 @@
 
 .custom-position {
     left: 16.5%;
+    top: 70px;
+}
+
+.custom-border {
+    border: #E2E2E2 1px solid;
+    border-radius: 6px;
 }
